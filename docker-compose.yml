@@ -25,7 +25,7 @@ services:
       MYSQL_PASSWORD: ${DB_PASSWORD}
       MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
     healthcheck:
-      test: mysqladmin ping -h 127.0.0.1 -u $$DATABASE_USERNAME --password=$$DATABASE_PASSWORD
+      test: mysqladmin ping -h 127.0.0.1 -u $$DB_USERNAME --password=$$DB_PASSWORD
       interval: 5s
       timeout: 1s
       retries: 5
