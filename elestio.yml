@@ -30,7 +30,7 @@ environments:
   - key: "APP_DEBUG"
     value: "false"
   - key: "APP_URL"
-    value: "http://[CI_CD_DOMAIN]"
+    value: "https://[CI_CD_DOMAIN]"
   - key: "APP_TIMEZONE"
     value: "'UTC'"
   - key: "APP_LOCALE"
@@ -112,7 +112,5 @@ lifeCycleConfig:
   postRestoreCommand: "./scripts/postRestore.sh"
   postDeployCommand: "./scripts/postDeploy.sh"
 webUI:
-  - url: "https://[CI_CD_DOMAIN]/admin"
+  - url: "https://[CI_CD_DOMAIN]"
     label: "Snipe-IT Admin"
-    login: "[ADMIN_EMAIL]"
-    password: "[ADMIN_PASSWORD]"
